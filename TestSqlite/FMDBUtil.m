@@ -122,7 +122,7 @@
 
 -(BOOL)addItemWithData:(NSDictionary*)theData forTable:(NSString*)theName
 {
-  NSString *formatSql = [NSString stringWithFormat:@"INSERT INTO %@ (name,age,time) VALUES (:name,:age,:time)",theName];
+  NSString *formatSql = [NSString stringWithFormat:@"INSERT OR REPLACE INTO %@ (name,age,time) VALUES (:name,:age,:time)",theName];
   return [db executeUpdate:formatSql withParameterDictionary:theData];
 }
 

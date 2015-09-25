@@ -178,7 +178,7 @@ sqlite3 *db;
   sqlite3_stmt *statement;
   
   //这个 sql 语句特别之处在于 values 里面有个? 号。在sqlite3_prepare函数里，?号表示一个未定的值，它的值等下才插入。
-  NSString *formatSql = [NSString stringWithFormat:@"INSERT INTO %@ (name,age,time) VALUES (?, ?, ?)",theName];
+  NSString *formatSql = [NSString stringWithFormat:@"INSERT OR REPLACE INTO %@ (name,age,time) VALUES (?, ?, ?)",theName];
   const char *sql = [formatSql UTF8String];
   
   int success2 = sqlite3_prepare_v2(db, sql, -1, &statement, NULL);

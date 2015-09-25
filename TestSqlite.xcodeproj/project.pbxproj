@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		E76613A21B79F015004D5A4D /* YTKKeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E76613A11B79F015004D5A4D /* YTKKeyValueStore.m */; };
 		E76613A51B79F04A004D5A4D /* YTKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E76613A41B79F04A004D5A4D /* YTKUtil.m */; };
+		E76F59661B9C470F00B31465 /* SQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F595C1B9C470F00B31465 /* SQLiteDatabase.m */; };
+		E76F59671B9C470F00B31465 /* SQLiteResult.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F595E1B9C470F00B31465 /* SQLiteResult.m */; };
+		E76F59681B9C470F00B31465 /* SQLiteRow.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F59601B9C470F00B31465 /* SQLiteRow.m */; };
+		E76F59691B9C470F00B31465 /* SqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F59631B9C470F00B31465 /* SqliteManager.m */; };
+		E76F596A1B9C470F00B31465 /* SqliteObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F59651B9C470F00B31465 /* SqliteObject.m */; };
 		E7794E521B2ECF9F000BBD73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7794E511B2ECF9F000BBD73 /* Foundation.framework */; };
 		E7794E541B2ECF9F000BBD73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7794E531B2ECF9F000BBD73 /* CoreGraphics.framework */; };
 		E7794E561B2ECF9F000BBD73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7794E551B2ECF9F000BBD73 /* UIKit.framework */; };
@@ -59,6 +64,16 @@
 		E76613A11B79F015004D5A4D /* YTKKeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKKeyValueStore.m; sourceTree = "<group>"; };
 		E76613A31B79F04A004D5A4D /* YTKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YTKUtil.h; sourceTree = "<group>"; };
 		E76613A41B79F04A004D5A4D /* YTKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YTKUtil.m; sourceTree = "<group>"; };
+		E76F595B1B9C470F00B31465 /* SQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDatabase.h; sourceTree = "<group>"; };
+		E76F595C1B9C470F00B31465 /* SQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDatabase.m; sourceTree = "<group>"; };
+		E76F595D1B9C470F00B31465 /* SQLiteResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteResult.h; sourceTree = "<group>"; };
+		E76F595E1B9C470F00B31465 /* SQLiteResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteResult.m; sourceTree = "<group>"; };
+		E76F595F1B9C470F00B31465 /* SQLiteRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteRow.h; sourceTree = "<group>"; };
+		E76F59601B9C470F00B31465 /* SQLiteRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteRow.m; sourceTree = "<group>"; };
+		E76F59621B9C470F00B31465 /* SqliteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteManager.h; sourceTree = "<group>"; };
+		E76F59631B9C470F00B31465 /* SqliteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteManager.m; sourceTree = "<group>"; };
+		E76F59641B9C470F00B31465 /* SqliteObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqliteObject.h; sourceTree = "<group>"; };
+		E76F59651B9C470F00B31465 /* SqliteObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqliteObject.m; sourceTree = "<group>"; };
 		E7794E4E1B2ECF9F000BBD73 /* TestSqlite.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSqlite.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7794E511B2ECF9F000BBD73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E7794E531B2ECF9F000BBD73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -150,6 +165,39 @@
 			path = YTKKeyValueStore;
 			sourceTree = "<group>";
 		};
+		E76F59531B9C3B5100B31465 /* venders */ = {
+			isa = PBXGroup;
+			children = (
+				E76F595A1B9C470F00B31465 /* SQLiteDatabase */,
+				E76F59611B9C470F00B31465 /* SqliteObject */,
+			);
+			path = venders;
+			sourceTree = "<group>";
+		};
+		E76F595A1B9C470F00B31465 /* SQLiteDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				E76F595B1B9C470F00B31465 /* SQLiteDatabase.h */,
+				E76F595C1B9C470F00B31465 /* SQLiteDatabase.m */,
+				E76F595D1B9C470F00B31465 /* SQLiteResult.h */,
+				E76F595E1B9C470F00B31465 /* SQLiteResult.m */,
+				E76F595F1B9C470F00B31465 /* SQLiteRow.h */,
+				E76F59601B9C470F00B31465 /* SQLiteRow.m */,
+			);
+			path = SQLiteDatabase;
+			sourceTree = "<group>";
+		};
+		E76F59611B9C470F00B31465 /* SqliteObject */ = {
+			isa = PBXGroup;
+			children = (
+				E76F59621B9C470F00B31465 /* SqliteManager.h */,
+				E76F59631B9C470F00B31465 /* SqliteManager.m */,
+				E76F59641B9C470F00B31465 /* SqliteObject.h */,
+				E76F59651B9C470F00B31465 /* SqliteObject.m */,
+			);
+			path = SqliteObject;
+			sourceTree = "<group>";
+		};
 		E7794E451B2ECF9F000BBD73 = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +232,7 @@
 		E7794E571B2ECF9F000BBD73 /* TestSqlite */ = {
 			isa = PBXGroup;
 			children = (
+				E76F59531B9C3B5100B31465 /* venders */,
 				E7794E601B2ECF9F000BBD73 /* AppDelegate.h */,
 				E7794E611B2ECF9F000BBD73 /* AppDelegate.m */,
 				E78F07B61B748BBB009B3420 /* Main.storyboard */,
@@ -404,13 +453,18 @@
 			files = (
 				E7BBE1B51B7221D000459934 /* TestNormalTableViewCell.m in Sources */,
 				E7794E681B2ECF9F000BBD73 /* ViewController.m in Sources */,
+				E76F59671B9C470F00B31465 /* SQLiteResult.m in Sources */,
 				E7794E621B2ECF9F000BBD73 /* AppDelegate.m in Sources */,
 				E7E000DB1B70B25800CA158C /* FMDatabase.m in Sources */,
+				E76F59681B9C470F00B31465 /* SQLiteRow.m in Sources */,
+				E76F596A1B9C470F00B31465 /* SqliteObject.m in Sources */,
 				E7794E5E1B2ECF9F000BBD73 /* main.m in Sources */,
+				E76F59661B9C470F00B31465 /* SQLiteDatabase.m in Sources */,
 				E77D5CF61B395365009FC9C9 /* FMDBUtil.m in Sources */,
 				E7E000DC1B70B25800CA158C /* FMDatabaseAdditions.m in Sources */,
 				E76613A21B79F015004D5A4D /* YTKKeyValueStore.m in Sources */,
 				E77D5CF31B395345009FC9C9 /* SqliteUtil.m in Sources */,
+				E76F59691B9C470F00B31465 /* SqliteManager.m in Sources */,
 				E7E000DD1B70B25800CA158C /* FMDatabasePool.m in Sources */,
 				E7794EB31B2ED42F000BBD73 /* TestSqliteBaseViewController.m in Sources */,
 				E7E000DE1B70B25800CA158C /* FMDatabaseQueue.m in Sources */,
